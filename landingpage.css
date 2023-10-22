@@ -62,7 +62,7 @@ body {
     width: 120px;
   }
   .container-fluid-bg {
-    background-image: url("newwatermarkupdated.jpeg");
+    background-image: url("./newwatermarkupdated.jpeg");
     background-repeat: no-repeat;
     background-origin: padding-box;
     background-position: center;
@@ -121,7 +121,7 @@ body {
   }
   
   .landing-body {
-    background-image: url("newland.jpeg");
+    background-image: url("./newland.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 130vh;
