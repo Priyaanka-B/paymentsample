@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="./images/SV-logo.png" alt="Logo" class="logo-svu" />
+      <img src="./images/exfEducation.png" alt="Logo" class="logo-exf" />
+      <div class="clear"></div>
+    </header>
+    <div class="container container-checkbg">
+      <div class="container-fluid-bg p-3 mt-5">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <h4 class="text-primary">Student Summary</h4>
+            <p><div class="row"><div class="col-sm-12 col-md-6">Admission /Role No.: </div><div class="col-sm-12 col-md-6">SVUEXF20230007</div></div></p>
+            <p><div class="row"><div class="col-sm-12 col-md-6">Student Name: </div><div class="col-sm-12 col-md-6">Saikumar B</div></div></p>
+            <p><div class="row"><div class="col-sm-12 col-md-6">Father's Name: </div><div class="col-sm-12 col-md-6">Krishna Rao</div></div></p>
+            <p><div class="row"><div class="col-sm-12 col-md-6">Gender: </div><div class="col-sm-12 col-md-6">male</div></div></p>
+            <p><div class="row"><div class="col-sm-12 col-md-6">DOB: </div><div class="col-sm-12 col-md-6">25-08-2000</div></div></p>
+            <p><div class="row"><div class="col-sm-12 col-md-6">Phone: </div><div class="col-sm-12 col-md-6">8974565855</div></div></p>
+            <p><div class="row"><div class="col-sm-12 col-md-6">Email: </div><div class="col-sm-12 col-md-6">test@gmail.com</div></div></p>
+            <p><div class="row"><div class="col-sm-12 col-md-6">Course: </div><div class="col-sm-12 col-md-6">MS Data-science</div></div></p>
+            <p><div class="row"><div class="col-sm-12 col-md-6">Certification: </div><div class="col-sm-12 col-md-6"></div></div></p>
+            <p><div class="row"><div class="col-sm-12 col-md-6">Certification Details: </div><div class="col-sm-12 col-md-6"></div></div></p>
+            <p><div class="row"><div class="col-sm-12 col-md-6">Amount: </div><div class="col-sm-12 col-md-6"></div></div></p>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <h4 class="text-primary">Fee Summary</h4>
+            <p><div class="row"><div class="col-sm-12 col-md-6">Certificate Fee: </div><div class="col-sm-12 col-md-6"></div></div></p>
+            <p><div class="row"><div class="col-sm-12 col-md-6">Late Fee: </div><div class="col-sm-12 col-md-6"></div></div></p>
+            <p><div class="row"><div class="col-sm-12 col-md-6">GST(18%): </div><div class="col-sm-12 col-md-6"></div></div></p>
+            <p><div class="row"><div class="col-sm-12 col-md-6">Total: </div><div class="col-sm-12 col-md-6"></div></div></p>
+          </div>
+          <div class="m-auto">
+            <button class="btn btn-primary m-1 btn-round" id="backbtn">
+              BACK
+            </button>
+            <button
+              class="btn btn-secondary m-1 btn-round"
+              onclick="javascript:return submitCancel()"
+              id="cancelbtn"
+            >
+              CANCEL
+            </button>
+            <button
+              class="btn btn-primary m-1 btn-round"
+              data-toggle="modal"
+              data-target="#exampleModal"
+              id="submitbtn"
+            >
+              PROCEED
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Select Payment Gateway
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <input type="radio" checked="true" />
+                    <img src="./images/billdesk.jpg" class="billdesk-icon" />
+                    <div class="text-danger">
+                      Transactions charges are free for UPI and PuPay Debit Card
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      CANCEL
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      PROCEED
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/getstudentDetails.js"></script>
+  </body>
+</html>

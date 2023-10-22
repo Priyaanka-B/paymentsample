@@ -1,0 +1,7 @@
+api for get student details:- 
+url:- https://www.exafluence.education/getStudentDetails
+method:- post
+params:- {
+    "email":"",
+    "mobile":""
+}
